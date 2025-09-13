@@ -1,0 +1,73 @@
+.treatment-page {
+  padding: 2rem 8%;
+  color: #0d1b2a;
+}
+
+.treatment-hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.treatment-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.specialized-care h2,
+.advanced-tech h2 {
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
+  text-align: center;
+}
+
+.care-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.care-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.tech-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.tech-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.tech-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.cta-btn {
+  margin-top: 1rem;
+  background: linear-gradient(90deg, #16a085, #1abc9c);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: linear-gradient(90deg, #13856e, #16a085);
+}
