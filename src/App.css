@@ -18,9 +18,14 @@ body {
 }
 
 .logo {
-  font-size: 1.4rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  color: #16a085;
+  color: #16a085; /* CureHere teal */
+}
+
+.logo-plus {
+  color: red;     /* red "+" */
+  margin-right: 4px;
 }
 
 .navbar ul {
@@ -54,7 +59,6 @@ body {
   height: 80vh;
   padding: 2rem;
 
-  /* Teal gradient background */
   background: linear-gradient(to bottom, #dff4f6, #7ccac4);
   color: #0d1b2a;
 }
@@ -68,21 +72,6 @@ body {
 
 .cta-btn {
   margin-top: 1rem;
-  background: linear-gradient(90deg, #16a085, #1abc9c);
-  color: white;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.cta-btn:hover {
-  background: linear-gradient(90deg, #13856e, #16a085);
-}
-.cta-btn {
   background: #e74c3c; /* red background */
   color: #fff;
   padding: 14px 28px;
@@ -95,15 +84,85 @@ body {
 }
 
 .cta-btn:hover {
-  background: #c0392b; /* darker red on hover */
-}
-.logo {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #16a085; /* keeps CureHere Hospital teal */
+  background: #c0392b; /* darker red */
 }
 
-.logo-plus {
-  color: red;     /* makes the + red */
-  margin-right: 4px;
+/* ✅ Responsive Design */
+
+/* Tablets (≤ 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 5%;
+  }
+
+  .navbar ul {
+    gap: 1rem;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .hero {
+    height: auto; /* allow content to expand naturally */
+    padding: 3rem 1.5rem;
+  }
+
+  .hero-content {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Small Phones (≤ 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+  }
+
+  .navbar ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .hero-content {
+    padding: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .cta-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.9rem;
+  }
 }

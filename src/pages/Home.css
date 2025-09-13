@@ -1,12 +1,11 @@
+/* 🌟 HERO SECTION (Desktop Default) */
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 4rem 8%;
   min-height: 100vh;
-
-  /* Teal gradient background like screenshot */
-  background: linear-gradient(to right, #e0f7f7, #c7f0e9);
+  background: linear-gradient(to bottom, #dff4f6, #7ccac4); /* final gradient */
 }
 
 .hero-left {
@@ -29,7 +28,7 @@
 }
 
 .cta-btn {
-  background: linear-gradient(90deg, #16a085, #1abc9c);
+  background: #e74c3c; /* Request Appointment red */
   color: #fff;
   padding: 14px 28px;
   border: none;
@@ -41,7 +40,7 @@
 }
 
 .cta-btn:hover {
-  background: linear-gradient(90deg, #13856e, #16a085);
+  background: #c0392b; /* darker red */
 }
 
 .stats {
@@ -63,55 +62,13 @@
 
 .hero-right {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-right img {
-  width: 380px;
-  height: auto;
-  border-radius: 12px;
-}
-
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4rem 8%;
-  min-height: 100vh;
-
-  /* Updated teal gradient background */
-  background: linear-gradient(to right, #dff9f7, #b7e9e1);
-}
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4rem 8%;
-  min-height: 100vh;
-
-  /* Updated background from image */
-  background: linear-gradient(to bottom, #dff4f6, #7ccac4);
-}
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4rem 8%;
-  min-height: 100vh;
-
-  /* Gradient updated to match uploaded image */
-  background: linear-gradient(to bottom, #dff4f6, #7ccac4);
-}
-.hero-right {
-  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
 }
 
 .main-doctor img {
-  height: 550px;   /* Increase size for main doctor */
+  height: 550px; /* main doctor bigger */
   width: auto;
   border-radius: 12px;
 }
@@ -122,35 +79,15 @@
 }
 
 .side-doctors img {
-  height: 280px;   /* Smaller but taller than before */
+  height: 280px; /* smaller side images */
   width: auto;
   border-radius: 10px;
 }
-/* Default (Desktop) */
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4rem 8%;
-  min-height: 100vh;
-  background: linear-gradient(to bottom, #dff4f6, #7ccac4);
-}
 
-.hero-left {
-  flex: 1;
-  max-width: 50%;
-}
-
-.hero-right img {
-  width: 380px;
-  height: auto;
-  border-radius: 12px;
-}
-
-/* ✅ Responsive for Tablets & Mobiles */
+/* ✅ Tablet Screens (max-width: 768px) */
 @media (max-width: 768px) {
   .hero {
-    flex-direction: column; /* Stack vertically */
+    flex-direction: column;
     text-align: center;
     padding: 2rem 5%;
   }
@@ -167,9 +104,12 @@
     font-size: 1rem;
   }
 
-  .hero-right img {
-    width: 250px; /* smaller image on mobile */
-    margin-top: 2rem;
+  .main-doctor img {
+    height: 400px;
+  }
+
+  .side-doctors img {
+    height: 200px;
   }
 
   .stats {
@@ -178,6 +118,7 @@
   }
 }
 
+/* ✅ Small Phones (max-width: 480px) */
 @media (max-width: 480px) {
   .hero-left h1 {
     font-size: 1.6rem;
@@ -190,5 +131,17 @@
   .cta-btn {
     padding: 12px 20px;
     font-size: 0.9rem;
+  }
+
+  .main-doctor img {
+    height: 300px;
+  }
+
+  .side-doctors {
+    flex-direction: column;
+  }
+
+  .side-doctors img {
+    height: 180px;
   }
 }
