@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import "./FindDoctor.css";
+import React, { useState } from "react";import "./FindDoctor.css";
 
 const doctorsData = [
   {
@@ -7,7 +6,7 @@ const doctorsData = [
     name: "Dr. Anil Kumar",
     specialty: "Cardiologist",
     timings: "Mon-Fri: 10:00 AM - 5:00 PM",
-    img: "https://randomuser.me/api/portraits/men/11.jpg",
+    img: "https://random.me/api/portraits/men/11.jpg",
   },
   {
     id: 2,

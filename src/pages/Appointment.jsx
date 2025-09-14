@@ -21,8 +21,19 @@ function Appointment() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
-    setSubmitted(true);
+
+    // ✅ Send appointment to backend
+    fetch("http://localhost:5000/api/appointments", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("✅ Appointment Saved:", data);
+        setSubmitted(true);
+      })
+      .catch((err) => console.error("❌ Error:", err));
   };
 
   return (
